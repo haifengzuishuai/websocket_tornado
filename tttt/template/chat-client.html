@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>聊天室</title>
+    <!--123123123123-->
+</head>
+
+<body>
+    <script type="text/javascript">
+        function duihua() {
+            alert("提交成功！")
+        }
+    </script>
+    <div id="contents" style="height:500px;overflow:auto;"></div>
+    <div>
+        <textarea id="msg"></textarea>
+        <a href="javascript:;" onclick="sendMsg()">发送</a>
+    </div>
+    <a href="http://ksawae.cn/#title/?from=singlemessage#title/">test-test-test-test-test-test</a>
+    <form action="/IndexHandler" method="post">
+        <input type="text" name="account" class="form-control" placeholder="延时">
+        <input type="text" name="account1" class="form-control" placeholder="弹幕条数">
+        <input type="submit" onclick="duihua()" value="提交" />
+        <!--<button class="btn btn-primary btn-block">提交</button>-->
+    </form>
+    <!-- jQuery -->
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var ws = new WebSocket("ws://10.5.146.27:8888/chat");
+        ws.onmessage = function (e) {
+            $("#contents").append("<p>" + e.data + "</p>");
+        }
+        function sendMsg() {
+            var msg = $("#msg").val();
+            ws.send(msg);
+            $("#msg").val("");
+        }
+    </script>
+</body>
+
+</html>
