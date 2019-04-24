@@ -5,9 +5,17 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="新建文件夹 (3)" />
-    <orderEntry type="module" module-name="test" />
+    <orderEntry type="module" module-name="WX_ws" />
     <orderEntry type="module" module-name="新建文件夹 (3)" />
     <orderEntry type="module" module-name="untitled" />
-    <orderEntry type="module" module-name="test" />
+    <orderEntry type="module" module-name="WX_ws" />
+    <orderEntry type="module" module-name="WX_ws" />
+    <orderEntry type="module" module-name="Tornade_share" />
+    <orderEntry type="module" module-name="Test_wx" />
+    <orderEntry type="module" module-name="txt_write" />
+    <orderEntry type="module" module-name="dxc_test" />
+    <orderEntry type="module" module-name="Tornade_share" />
+    <orderEntry type="module" module-name="Test" />
+    <orderEntry type="module" module-name="web_study" />
   </component>
 </module>

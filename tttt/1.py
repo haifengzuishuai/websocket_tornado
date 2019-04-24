@@ -18,18 +18,19 @@ uid = ['1474021371', '1474021374', '1474021378', '1474021380',
        '1474021422', '1474021427', '1474021433', '1474021441', '1480384507']
 name = ['我是第一', '我是第二', '我是第山', '我是第是', '我是第五', '我是第流', '我是第器', '我是第吧', '我是第久']
 see = ['2', '4', '6', '8', '10']
-# 导入json文件现在用不上
 # 定义端口
-define("port", default=8887, type=int)
+define("port", default=8888,
+       type=int)  # 等同于tornado.options.define("port", default=8888, type=int, help="run server on the given port.") # 定义服务器监听端口选项
 txt = json.load(codecs.open('./test.json', 'rb'))
 name1 = txt['gift']
 name2 = txt['gift1']
+
+
 # 主路由
-
-
 class IndexHandler(RequestHandler):
-    def get(self,account,account1):
+    def get(self):
         self.render("chat-client.html")
+
 
 class ChatHandler(WebSocketHandler):
     users = set()  # 用来存放在线用户的容器
@@ -41,8 +42,8 @@ class ChatHandler(WebSocketHandler):
                                                   datetime.datetime.now().strftime("%H:%M:%S")))
             a = json.dumps(name1)
             u.write_message(a)
-            for i in range(10):
-                time.sleep(0.05)
+            for i in range(500):
+                time.sleep(0)
                 sl = i + 1
                 # 随机取uid
                 user = choice(uid)
@@ -163,7 +164,7 @@ class ChatHandler(WebSocketHandler):
         for u in self.users:  # 向在线用户广播消息
             u.write_message(u"[%s]-[%s]-说：%s" % (self.request.remote_ip,
                                                  datetime.datetime.now().strftime("%H:%M:%S"), message))
-            for i in range(3000):
+            for i in range(1000):
                 print(i)
                 time.sleep(0.1)
                 sl1 = i + 1

@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../test/.idea/test.iml" filepath="$PROJECT_DIR$/../test/.idea/test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../test/.idea/test.iml" filepath="$PROJECT_DIR$/../test/.idea/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Test/.idea/Test.iml" filepath="$PROJECT_DIR$/../Test/.idea/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Test_wx/.idea/Test_wx.iml" filepath="$PROJECT_DIR$/../Test_wx/.idea/Test_wx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Tornade_share/.idea/Tornade_share.iml" filepath="$PROJECT_DIR$/../Tornade_share/.idea/Tornade_share.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../WX_FCH/.idea/WX_ws.iml" filepath="$PROJECT_DIR$/../WX_FCH/.idea/WX_ws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test/.idea/WX_ws.iml" filepath="$PROJECT_DIR$/../test/.idea/WX_ws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dxc_test/.idea/dxc_test.iml" filepath="$PROJECT_DIR$/../dxc_test/.idea/dxc_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/tttt.iml" filepath="$PROJECT_DIR$/.idea/tttt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../txt_write/.idea/txt_write.iml" filepath="$PROJECT_DIR$/../txt_write/.idea/txt_write.iml" />
       <module fileurl="file://$PROJECT_DIR$/../untitled/.idea/untitled.iml" filepath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" />
+      <module fileurl="file://C:/QQQ/Flask_study/.idea/web_study.iml" filepath="C:/QQQ/Flask_study/.idea/web_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/../alter/.idea/新建文件夹 (3).iml" filepath="$PROJECT_DIR$/../alter/.idea/新建文件夹 (3).iml" />
       <module fileurl="file://$PROJECT_DIR$/../新建文件夹 (3)/.idea/新建文件夹 (3).iml" filepath="$PROJECT_DIR$/../新建文件夹 (3)/.idea/新建文件夹 (3).iml" />
     </modules>

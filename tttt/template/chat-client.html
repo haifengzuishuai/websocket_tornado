@@ -19,7 +19,7 @@
         <a href="javascript:;" onclick="sendMsg()">发送</a>
     </div>
     <a href="http://ksawae.cn/#title/?from=singlemessage#title/">test-test-test-test-test-test</a>
-    <form action="/IndexHandler" method="post">
+    <form action="/IndexHandler" method="get">
         <input type="text" name="account" class="form-control" placeholder="延时">
         <input type="text" name="account1" class="form-control" placeholder="弹幕条数">
         <input type="submit" onclick="duihua()" value="提交" />
@@ -28,7 +28,7 @@
     <!-- jQuery -->
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
-        var ws = new WebSocket("ws://10.5.146.27:8888/chat");
+        var ws = new WebSocket("ws://10.5.146.39:8888/chat");
         ws.onmessage = function (e) {
             $("#contents").append("<p>" + e.data + "</p>");
         }
